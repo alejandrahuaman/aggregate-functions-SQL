@@ -1,4 +1,4 @@
-/* In the code below, we will using a dataset containin some of the biggest startup names in the industry to retrieve some interesting insights 
+/* In the code below, we will be using a dataset containing some of the biggest startup names in the industry to retrieve some interesting insights 
 about these companies*/
 
 
@@ -29,7 +29,7 @@ WHERE stage = 'Seed';
 SELECT MIN(founded)
 FROM startups;
 
-/* 1994  is the year of the company founded*/
+/* 1994  is the year the company was founded*/
 
 /* Let's find out the valuations among different sectors */
 SELECT AVG(valuation)
@@ -37,7 +37,7 @@ FROM startups;
 
 /* The average valuation is $15,974,685,081.9672 */
 
-/* Here we can the avg valuation per category */
+/* Here, we can see the avg valuation per category */
 SELECT category, AVG(valuation)
 FROM startups
 GROUP BY category;
